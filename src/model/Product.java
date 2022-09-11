@@ -49,7 +49,7 @@ public class Product {
                 "Nome = " + name + "\n" +
                 "Descrição = " + description + "\n" +
                 "Quantidade = " + amount +  "\n" +
-                "Preço = " + price + "\n";
+                "Preço unitário = " + price + "\n";
     }
 
     public String total(){
@@ -61,7 +61,7 @@ public class Product {
                 "Preço total em estoque = " + (price * amount) + "\n";
     }
 
-    public boolean spare(double qtd){
+    public boolean addProduct(double qtd){
         if(qtd > 0){
             amount += qtd;
             return true;

@@ -74,7 +74,7 @@ public class GerenciarEstoque {
 
         if(product != null){
             System.out.println("Digite a quantidade adicional: ");
-            boolean ok = product.spare(Double.parseDouble(sc.nextLine()));
+            boolean ok = product.addProduct(Double.parseDouble(sc.nextLine()));
             if(ok){
                 System.out.println("Quantidade adicionada com sucesso!");
             }else{
